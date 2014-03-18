@@ -1,0 +1,61 @@
+#FastQC
+#Fri Mar 14 15:29:14 EDT 2014
+JVMLevel=1.6
+author=Marc-Danie Nazaire, Broad Institute
+commandLine=<java> <java_flags> -cp <libdir>sam-1.32.jar<path.separator><libdir>jbzip2-0.9.jar<path.separator><libdir>fastqc-0.10.1.jar<path.separator><libdir>fastqc-wrapper.jar<path.separator><libdir> -Dfastqc.output_dir=./ -Dfastqc.unzip=false -Dfastqc.kmer_size=<kmer.size> -Dfastqc.contaminant_file=<contaminant.file> -Dfastqc.quiet=true org.genepattern.modules.FastQCWrapper <input.file>
+cpuType=any
+taskDoc=doc.html
+description=Performs several preprocessing steps on a res, gct, or odf input file
+fileFormat=zip
+language=Java
+name=FastQC
+os=any
+
+p1_MODE=IN
+p1_TYPE=FILE
+p1_default_value=
+p1_description=A raw sequence file - .fastq
+p1_fileFormat=fastq;fq;txt;sam;bam
+p1_name=input.file
+p1_optional=
+p1_prefix_when_specified=
+p1_type=java.io.File
+p1_value=
+
+p2_MODE=IN
+p2_TYPE=FILE
+p2_default_value=
+p2_description=Specifies a non-default file which contains the list of contaminants to screen overrepresented sequences against. The file must contain sets of named contaminants in the form name[tab]sequence.  Lines prefixed with a hash will be ignored.
+p2_fileFormat=txt
+p2_name=contaminant.file
+p2_optional=on
+p2_prefix_when_specified=
+p2_type=java.io.File
+p2_value=
+
+p3_default_value=5
+p3_description=Specifies the length of Kmer to look for in the Kmer content module. Specified Kmer length must be between 2 and 10. Default length is 5.
+p3_name=kmer.size
+p3_optional=
+p3_prefix_when_specified=
+p3_type=java.lang.String
+p3_value=
+
+p4_default_value=
+p4_description=Bypasses the normal sequence file format detection and forces the program to use the specified format. Valid formats are bam,sam,bam_mapped,sam_mapped and fastq
+p4_name=input.format
+p4_optional=on
+p4_prefix_when_specified=
+p4_type=java.lang.String
+p4_value=\=Detect;bam\=BAM;sam\=SAM;bam_mapped\=BAM Mapped only (normally used for colorspace data);sam_mapped\=SAM Mapped only (normally used for colorspace data);fastq\=Fastq
+
+pipelineModel=
+privacy=public
+quality=production
+requiredPatchLSIDs=
+requiredPatchURLs=
+serializedModel=
+taskType=RNA-seq
+categories=RNA-seq
+userid=GenePattern (gp-help@broadinstitute.org)
+version=
