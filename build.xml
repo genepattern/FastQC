@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Ant build file -->
+
+<project basedir="" default="package" name="FastQC">
+    <property name="dirOffset" value="../"/>
+    <import file="${dirOffset}/commontargets.xml"/>
+
+    <target name="_init" depends="init">
+        <property name="appfile" value="fastqc-wrapper.jar"/>
+        <property name="inclds" value="org/"/>
+        <path id="library.classpath">
+            <fileset id="jar.lib" dir="lib"/>
+        </path>
+    </target>
+
+    <target name="package" depends="_init, clean, compile">
+        <jar basedir="." defaultexcludes="true" excludes="**/*.java" includes="${inclds}"
+             jarfile="${appfile}"/>
+    </target>
+
+    <target name="clean">
+        <delete>
+            <fileset dir="." includes="**/*.class"/>
+        </delete>
+    </target>
+
+    <target name="compile" depends="_init">
+        <javac debug="true" defaultexcludes="true" deprecation="true"
+               destdir="." includes="${inclds}" optimize="false" proceed="false"
+               srcdir="src"
+               target="${java.target}"
+               source="${java.target}">
+            <classpath refid="library.classpath"/>
+        </javac>
+    </target>
+
+    <target depends="clean,compile" name="build"/>
+
+    <target depends="_init, package" name="create-zip">
+        <antcall target="prezip"/>
+        <zip destfile="${dest.dir}/${ant.project.name}.zip" whenempty="fail" defaultexcludes="true">
+            <fileset dir="." includes="manifest, ${appfile}, *.html, paramgroups.json"/>
+            <fileset refid="jar.lib"/>
+            <zipfileset dir="helper_files/Templates" prefix="Templates"/>
+            <zipfileset dir="helper_files/Contaminants" prefix="Contaminants"/>
+        </zip>
+        <antcall target="postzip"/>
+    </target>
+
+</project>
