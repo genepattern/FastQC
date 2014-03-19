@@ -47,7 +47,7 @@ p4_name=input.format
 p4_optional=on
 p4_prefix_when_specified=
 p4_type=java.lang.String
-p4_value=\=Detect;bam\=BAM;sam\=SAM;bam_mapped\=BAM Mapped only (normally used for colorspace data);sam_mapped\=SAM Mapped only (normally used for colorspace data);fastq\=Fastq
+p4_value=\=Detect;bam\=BAM;sam\=SAM;bam_mapped\=BAM Mapped only (normally used for colorspace data);sam_mapped\=SAM Mapped only (normally used for colorspace data);fastq\=FASTQ
 
 pipelineModel=
 privacy=public
