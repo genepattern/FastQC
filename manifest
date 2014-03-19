@@ -42,7 +42,7 @@ p3_type=java.lang.String
 p3_value=
 
 p4_default_value=
-p4_description=Bypasses the normal sequence file format detection and forces the program to use the specified format. Valid formats are bam,sam,bam_mapped,sam_mapped and fastq
+p4_description=Bypasses the normal sequence file format detection and forces the program to use the specified format.
 p4_name=input.format
 p4_optional=on
 p4_prefix_when_specified=
