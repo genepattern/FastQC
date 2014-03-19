@@ -5,7 +5,7 @@ author=Marc-Danie Nazaire, Broad Institute
 commandLine=<java> <java_flags> -cp <libdir>sam-1.32.jar<path.separator><libdir>jbzip2-0.9.jar<path.separator><libdir>fastqc-0.10.1.jar<path.separator><libdir>fastqc-wrapper.jar<path.separator><libdir> -Dfastqc.output_dir=./ -Dfastqc.unzip=false -Dfastqc.kmer_size=<kmer.size> -Dfastqc.contaminant_file=<contaminant.file> -Dfastqc.quiet=true org.genepattern.modules.FastQCWrapper <input.file>
 cpuType=any
 taskDoc=doc.html
-description=Performs several preprocessing steps on a res, gct, or odf input file
+description=Provides quality control checks on raw sequence data
 fileFormat=zip
 language=Java
 name=FastQC
