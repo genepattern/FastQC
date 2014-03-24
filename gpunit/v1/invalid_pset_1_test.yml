@@ -1,0 +1,11 @@
+#lsid=urn:lsid:broad.mit.edu:cancer.software.genepattern.module.analysis:00340:999999999
+#
+name: Invalid Parameter Set 1
+module: FastQC
+params:
+       input.file: "ftp://gpftp.broadinstitute.org/pub/example_data/FastQC/v1/input/s.cerevisiae_mutant.fastq"
+       contaminant.file: 
+       kmer.size: "-1"
+       input.format: 
+assertions:
+        jobStatus: error
