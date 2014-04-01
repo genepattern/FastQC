@@ -5,7 +5,7 @@ author=Marc-Danie Nazaire, Broad Institute
 commandLine=<java> <java_flags> -cp <libdir>sam-1.32.jar<path.separator><libdir>jbzip2-0.9.jar<path.separator><libdir>fastqc-0.10.1.jar<path.separator><libdir>fastqc-wrapper.jar<path.separator><libdir> -Dfastqc.output_dir=./ -Dfastqc.unzip=false -Dfastqc.kmer_size=<kmer.size> -Dfastqc.contaminant_file=<contaminant.file> -Dfastqc.quiet=true org.genepattern.modules.FastQCWrapper <input.file>
 cpuType=any
 taskDoc=doc.html
-description=Provides quality control checks on raw sequence data
+description=Provides quality control metrics on raw sequence data
 fileFormat=zip
 language=Java
 name=FastQC
@@ -42,7 +42,7 @@ p3_type=java.io.File
 p3_value=
 
 p4_default_value=5
-p4_description=Specifies the length of Kmer to look for in the Kmer content module. Specified Kmer length must be between 2 and 10. Default length is 5.
+p4_description=The length of Kmer to look for in the Kmer content module. The specified Kmer length must be between 2 and 10. Default length is 5.
 p4_name=kmer.size
 p4_optional=
 p4_prefix_when_specified=
@@ -58,4 +58,4 @@ serializedModel=
 taskType=RNA-seq
 categories=RNA-seq
 userid=GenePattern (gp-help@broadinstitute.org)
-version=add html doc
+version=moved kmer size and contaminant file parameters to Advanced parameters section and made improvements to parameter descriptions
