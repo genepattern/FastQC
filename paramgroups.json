@@ -1,1 +1,1 @@
-[{name: "Basic", parameters: ["input.file"]}, {name:"Advanced", parameters: ["input.format", "contaminant.file", "kmer.size"], hidden:true}]
+[{name: "Basic", parameters: ["input.file"]}, {name:"Advanced", parameters: ["input.format", "contaminant.file", "kmer.size", "extract.output"], hidden:true}]
