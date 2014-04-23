@@ -4,8 +4,7 @@ name: Invalid Parameter Set 2
 module: FastQC
 params:
        input.file: "ftp://gpftp.broadinstitute.org/pub/example_data/FastQC/v1/input/s.cerevisiae_mutant.fastq"
-       contaminant.file: 
        kmer.size: "11"
-       input.format: 
+       extract.output: "true"
 assertions:
         jobStatus: error

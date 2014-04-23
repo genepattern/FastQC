@@ -4,9 +4,8 @@ name: Valid Parameter Set 2
 module: FastQC
 params:
        input.file: "ftp://gpftp.broadinstitute.org/example_data/modules/FastQC/v1/input/s.cerevisiae_mutant.fastq"
-       contaminant.file: 
        kmer.size: "2"
-       input.format: 
+       extract.output: "false"
 assertions:
     diffCmd: org.genepattern.gpunit.diff.UnzipAndDiffFile
     files:
