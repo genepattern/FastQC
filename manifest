@@ -5,7 +5,7 @@ author=Marc-Danie Nazaire, Broad Institute
 commandLine=<java> <java_flags> -cp <libdir>sam-1.32.jar<path.separator><libdir>jbzip2-0.9.jar<path.separator><libdir>fastqc-0.10.1.jar<path.separator><libdir>fastqc-wrapper.jar<path.separator><libdir> -Dfastqc.output_dir=./ -Dfastqc.unzip=<extract.output> -Dfastqc.kmer_size=<kmer.size> -Dfastqc.contaminant_file=<contaminant.file> -Dfastqc.quiet=true org.genepattern.modules.FastQCWrapper <input.file>
 cpuType=any
 taskDoc=doc.html
-description=Provides quality control metrics on raw sequence data
+description=[**Beta Release** Contact gp-help with any issues. Check stdout.txt and stderr.txt for errors] Provides quality control metrics on raw sequence data
 fileFormat=zip
 language=Java
 name=FastQC
