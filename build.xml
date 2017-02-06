@@ -2,7 +2,7 @@
 <!-- Ant build file -->
 
 <project basedir="" default="package" name="FastQC">
-    <property name="dirOffset" value="../"/>
+    <property name="dirOffset" value="../common_module_code"/>
     <import file="${dirOffset}/commontargets.xml"/>
 
     <target name="_init" depends="init">
