@@ -13,5 +13,5 @@ assertions:
     files:
         fastqc_data.txt:
             # diff: expected/s.cerevisiae_mutant_fastqc/fastqc_data.txt
-            diff: /Volumes/xchip_sqa/Modules/TestSuiteData/FastQC/v1/output/valid_pset_3_test/s.cerevisiae_mutant_fastqc/fastqc_data.txt
+            diff: ftp://gpftp.broadinstitute.org/gpunit/FastQC/output/valid_inputFastq_extractTrue/s.cerevisiae_mutant_fastqc/fastqc_data.txt
 
