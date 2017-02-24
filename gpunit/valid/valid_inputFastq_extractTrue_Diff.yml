@@ -2,7 +2,7 @@
 #
 #lsid=urn:lsid:broad.mit.edu:cancer.software.genepattern.module.analysis:00340:999999999
 #
-name: Valid Parameter Set 3
+name: valid_inputFastq_extractTrue_Diff
 module: FastQC
 params:
     input.file: "ftp://gpftp.broadinstitute.org/example_data/modules/FastQC/v1/input/s.cerevisiae_mutant.fastq"
