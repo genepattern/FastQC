@@ -28,8 +28,6 @@
         <javac debug="true" defaultexcludes="true" deprecation="true"
                destdir="." includes="${inclds}" optimize="false" proceed="false"
                srcdir="src"
-               target="${java.target}"
-               source="${java.target}">
             <classpath refid="library.classpath"/>
         </javac>
     </target>
