@@ -7,9 +7,9 @@ params:
     kmer.size: "5"
     extract.output: "false"
 assertions:
-    diffCmd: diff
+    diffCmd: org.genepattern.gpunit.diff.UnzipAndDiffFile
     files:
-        "fastqc_data.txt":
+        s.cerevisiae_mutant_fastqc.zip:
             # this is the relative dir as found after doing a git clone in Jenkins
             # may need modification in other test envs
             diff: "output/valid_default_NoExtract_Diff/s.cerevisiae_mutant_fastqc/fastqc_data.txt"
