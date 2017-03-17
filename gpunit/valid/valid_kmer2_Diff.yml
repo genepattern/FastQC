@@ -10,4 +10,4 @@ assertions:
     diffCmd: org.genepattern.gpunit.diff.UnzipAndDiffFile
     files:
         s.cerevisiae_mutant_fastqc.zip:
-            diff: "ftp://gpftp.broadinstitute.org/gpunit/FastQC/output/valid_kmer2/s.cerevisiae_mutant_fastqc/fastqc_data.txt"
+            diff: "output/valid_kmer2/s.cerevisiae_mutant_fastqc/fastqc_data.txt"
