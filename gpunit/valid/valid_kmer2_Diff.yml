@@ -10,4 +10,5 @@ assertions:
     diffCmd: org.genepattern.gpunit.diff.UnzipAndDiffFile
     files:
         s.cerevisiae_mutant_fastqc.zip:
+            #note that this is for the FS on Jenkins @ the Broad - depending on how you are checking out, this might need a dirrOffset
             diff: "output/valid_kmer2/s.cerevisiae_mutant_fastqc/fastqc_data.txt"
