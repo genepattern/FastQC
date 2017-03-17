@@ -15,5 +15,5 @@ assertions:
         s.cerevisiae_mutant_fastqc.zip:
             # diff: expected/s.cerevisiae_mutant_fastqc/fastqc_data.txt
             # note that this is for the FS on Jenkins @ the Broad - depending on how you are checking out, this might need a dirrOffset
-            diff: "valid/output/valid_inputFastq_extractTrue/s.cerevisiae_mutant_fastqc/fastqc_data.txt"
+            diff: "../output/valid_inputFastq_extractTrue/s.cerevisiae_mutant_fastqc/fastqc_data.txt"
 
