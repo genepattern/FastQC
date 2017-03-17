@@ -7,8 +7,7 @@ params:
     kmer.size: "5"
     extract.output: "false"
 assertions:
-    diffCmd: org.genepattern.gpunit.diff.UnzipAndDiffFile
+    diffCmd: diff
     files:
-        #s.cerevisiae_mutant_fastqc.zip:
-            diff: "expected/s.cerevisiae_mutant_fastqc/fastqc_data.txt"
-            
+        "fastqc_data.txt":
+            diff: "output/valid_default_NoExtract_Diff/s.cerevisiae_mutant_fastqc/fastqc_data.txt"
