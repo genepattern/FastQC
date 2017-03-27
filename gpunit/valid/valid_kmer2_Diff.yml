@@ -1,6 +1,6 @@
 #lsid=urn:lsid:broad.mit.edu:cancer.software.genepattern.module.analysis:00340:999999999
 #
-name: Valid Parameter Set 2
+name: valid_kmer2_Diff
 module: FastQC
 params:
        input.file: "ftp://gpftp.broadinstitute.org/example_data/modules/FastQC/v1/input/s.cerevisiae_mutant.fastq"
@@ -10,5 +10,5 @@ assertions:
     diffCmd: org.genepattern.gpunit.diff.UnzipAndDiffFile
     files:
         s.cerevisiae_mutant_fastqc.zip:
-            diff: /Volumes/xchip_sqa/Modules/TestSuiteData/FastQC/v1/output/valid_pset_2_test/s.cerevisiae_mutant_fastqc/fastqc_data.txt
-
+            #note that this is for the FS on Jenkins @ the Broad - depending on how you are checking out, this might need a dirrOffset
+            diff: "../output/valid_kmer2/s.cerevisiae_mutant_fastqc/fastqc_data.txt"
