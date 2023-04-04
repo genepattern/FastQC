@@ -5,7 +5,7 @@
 name: valid_inputFastq_extractTrue_Diff
 module: FastQC
 params:
-    input.file: "ftp://gpftp.broadinstitute.org/example_data/modules/FastQC/v1/input/s.cerevisiae_mutant.fastq"
+    input.file: "https://datasets.genepattern.org/gpftp/example_data/modules/FastQC/v1/input/s.cerevisiae_mutant.fastq"
     kmer.size: "5"
     input.format: "fastq"
     extract.output: "true"
