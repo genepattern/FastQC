@@ -3,7 +3,7 @@
 name: invalid_s.cereMut_kmerNeg1
 module: FastQC
 params:
-       input.file: "ftp://gpftp.broadinstitute.org/example_data/modules/FastQC/v1/input/s.cerevisiae_mutant.fastq"
+       input.file: "https://datasets.genepattern.org/gpftp/example_data/modules/FastQC/v1/input/s.cerevisiae_mutant.fastq"
        kmer.size: "-1"
        extract.output: "true"
 assertions:
